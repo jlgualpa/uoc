@@ -156,3 +156,71 @@ ls -l
 npm run dev
 ls
 ls -l
+git pull
+git status
+git commit -m "Web Enciclopedia1"
+git status
+git add .
+git push
+vi index.html 
+git satatus
+git status
+git push origin master
+git push --set-upstream origin master
+nmp run build
+npm run build
+pwd
+cd img/
+ls
+ls -l
+ls
+ls -l
+chmod 777 blunder-detalle.JPG 
+chmod 777 blunder.jpg 
+chmod 777 enciclopedia.png 
+chmod 777 facebook.ico 
+chmod 777 front-end-accebilidad.jpg 
+chmod 777 front-end-rendimiento.JPG 
+chmod 777 procesadores-detalle.JPG 
+chmod 777 procesadores.JPG 
+chmod 777 social_youtube.ico 
+chmod 777 twitter.ico 
+chmod 777 up.ico 
+ls -l
+npm run build
+cd ..
+vi index.html 
+npm run build
+npm run dev
+git status
+ls
+ls -l
+git commit -m "Web Enciclopedia3"
+git status
+git add .
+git status
+git push
+git checkout master
+git branch --merged
+git branch -d old-merged-feature
+git branch -d
+npm run build
+npm run dev
+npm run build
+npm run dev
+ls
+cd UOC/
+clear
+ls
+npm -v
+node version--
+nodejs -v
+npm init
+ls
+clear
+cd ..
+ls
+vi index.html
+npm run dev
+npm run build
+npm run dev

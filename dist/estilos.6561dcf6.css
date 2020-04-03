@@ -1,0 +1,375 @@
+/*ESTILOS GENERALES*/
+
+/*Declaracion de colores genrales para el sitio web*/
+
+:root {
+  --principal: #306291;
+  --fondo-oscuro: rgba(69, 141, 209, 0.5);
+  --fondo-claro: rgba(69, 141, 209, 0.2);
+  --texto-claro: #666666;
+  --contraste: #d9645d;
+}
+
+.fondo_claro {
+  background-color: var(--fondo-claro);
+}
+
+.contraste {
+  color: var(--contraste);
+}
+
+a {
+  text-decoration: none;
+  color: var(--principal);
+}
+
+a:hover {
+  color: var(--contraste);
+}
+
+/*Estilos comunes entre todas las paginas*/
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.sin_borde {
+  border: none;
+}
+
+/*Estilo para dar un tamaño al ancho del contenido*/
+
+.contenido {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Estilo para listas que se presentaran como menus*/
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul li {
+  width: 150px;
+  border: 1px solid var(--fondo-oscuro);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+  font-weight: bolder;
+}
+
+main ul {
+  display: block;
+}
+
+main ul li {
+  border: none;
+  display: inline-block;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+div div ul li {
+  display: list-item;
+  padding: 10px;
+}
+
+/*ESTILOS PARA SECCION HEADER*/
+
+/*Definimos el color de la cabecera de todas las paginas*/
+
+header {
+  background-color: var(--fondo-claro);
+  border-bottom: 2px solid var(--fondo-oscuro);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/*ESTILOS PARA SECCION FOOTER*/
+
+/*Definimos el color del pied e pagina de todas las paginas*/
+
+footer {
+  background-color: var(--fondo-claro);
+  border-top: 2px solid var(--fondo-oscuro);
+  padding: 1em;
+}
+
+footer p {
+  margin: 0px;
+}
+
+/*Estilo para el link que nos llevara al contenido de inicio en cada pagina*/
+
+.inicio {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  background-color: var(--fondo-claro);
+}
+
+/*Estilos para ubicar el contenido de cada bloque en el pie de pagina*/
+
+.col1 {
+  float: left;
+}
+
+.col2 {
+  float: right;
+}
+
+.col3 {
+  clear: both;
+}
+
+/*ESTILOS PARA SECCION MAIN*/
+
+/*Estilo para evitar que los contenidos principales topen los bordes de las paginas*/
+
+main {
+  padding: 1em;
+}
+
+/*ESTILOS ESPECIFICOS PARA LA PAGINA INDEX*/
+
+/*Estilo para el contenido multimedia*/
+
+figure {
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+iframe {
+  width: 60%;
+  height: 400px;
+}
+
+/*Estilo para organizar el contenido (imagenes 17 objetivos para transformar el mundo) */
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 50px;
+  grid-auto-rows: minmax(100px, auto);
+  padding-bottom: 1em;
+}
+
+article {
+  max-width: 100%;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+section article img {
+  max-width: 100%;
+}
+
+/*ESTILOS ESPECIFICOS PARA LA PAGINA CATEGORIAS*/
+
+/*Estilo para organizar el contenido (imagenes y articulos)*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 20px;
+}
+
+.impares {
+  grid-column: 1;
+  text-align: left;
+}
+
+.pares {
+  grid-column: 2;
+  text-align: left;
+}
+
+.box {
+  width: 220px;
+  height: 200px;
+  padding: 1em;
+}
+
+div img {
+  display: block;
+  margin: 0 auto;
+}
+
+/*ESTILOS ESPECIFICOS PARA LA PAGINA FIN POBREZA*/
+
+/*Estilo para organizar el contenido (menu interior y articulos con sus respectivos items )*/
+
+.container_pobreza {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 20px;
+}
+
+aside div ul li {
+  text-align: left;
+  padding: 0;
+  list-style: disc;
+  font-weight: normal;
+}
+
+ol {
+  padding: 0;
+}
+
+/*ESTILOS ESPECIFICOS PARA LA PAGINA  CONTACTO*/
+
+/*Estilos para el formulario y sus respectivos componentes*/
+
+form {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+legend {
+  font-weight: bolder;
+  font-size: 1.333em;
+  color: var(--principal);
+}
+
+form small {
+  color: var(--texto-claro);
+  display: block;
+  text-align: left;
+  padding-bottom: 10px;
+  font-style: oblique;
+}
+
+fieldset {
+  border: none;
+  border-radius: 10px;
+  background-color: var(--fondo-claro);
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+fieldset div {
+  display: flex;
+  margin: 10px;
+  text-align: left;
+}
+
+label {
+  width: 35%;
+}
+
+input:not([type="checkbox"]), textarea {
+  border: 1px solid var(--fondo-oscuro);
+  padding: 8px;
+  width: 60%;
+  margin: 5px;
+  border-radius: 5px;
+}
+textarea {
+  width: 100%;
+}
+
+input:focus, input:hover, select:focus, select:hover, textarea:focus, textarea:hover {
+  border: 1px solid var(--contraste);
+}
+
+input[type="submit"] {
+  border-color: var(--contraste);
+  background-color: var(--contraste);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.33em;
+  border-radius: 10px;
+  margin-top: 30px;
+  max-width: 200px;
+}
+
+/*ESTILOS QUE PERMITEN DEFINIR SI EL DISPOSITIVO EN EL QUE S EPRESENTA EL SITIO WEB ES UN MOBILE O UN ORDENADOR*/
+
+/*Si es un dispositivo Mobile*/
+
+@media screen and (max-width: 425px) {
+  iframe {
+    height: 200px;
+  }
+  footer ul {
+    margin: 0px 40px;
+  }
+  header ul {
+    margin: 0px 40px;
+  }
+  .col3 {
+    text-align: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .container_pobreza {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .impares {
+    grid-column: 1;
+    text-align: left;
+  }
+  .medio {
+    grid-column: 1;
+    text-align: left;
+  }
+  .pares {
+    grid-column: 1;
+    text-align: left;
+  }
+  aside h2 {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  form {
+    max-width: 100%;
+  }
+  fieldset div {
+    display: block;
+  }
+  input:not([type="checkbox"]), select, textarea {
+    width: 90%;
+  }
+}
+
+/*Si es un Desktop*/
+
+@media screen and (min-width: 426px) {
+  header li {
+    width: 120px;
+  }
+  footer .col1 ul {
+    justify-content: left;
+  }
+  .sin_borde {
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=/estilos.6561dcf6.css.map */
