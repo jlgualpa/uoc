@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Module Bundlers</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+  <!--Cabecera-->
+  <header>
+    <div class="contenido">
+      <!--Menu navegacion principal-->
+      <nav>
+        <ul>
+          <li class="sin_borde"><img src="img/enciclopedia.png" alt="" /></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="categorias.html">Categorias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <!--Contenido Principal-->
+    <main id="inicio_contenido">
+        <div class="contenido">
+
+            <!--Menú de migas de pan -->
+            <ul class="left">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categorias.html">/ Categorias</a></li>
+                <li>/ Module Bundlers</li>
+            </ul>
+
+            <div class="container_pobreza">
+
+                <div class="impares">
+                    <img src="img/blunder-detalle.jpg" class="box" alt="">
+
+                    <!--Menú interior contenido  -->
+                    <ul>
+                        <li><a href="blunder.html#destacables">Datos destacables</a></li>
+                        <li><a href="blunder.html#resumen">Resumen</a></li>
+                        <li><a href="blunder.html#referencias">Enlaces Externos</a></li>
+                    </ul>
+
+                </div>
+
+                <!-- Articulos contenido menu interior -->
+                <aside class="par">
+
+                    <h1>¿Qué es el Module Bundler y cómo funciona?</h1>
+                    <div style="text-align: justify"> 
+
+                        <h2 id="destacables">Datos destacables</h2>
+                        <p>
+                        Los paquetes de módulos son herramientas que los desarrolladores frontales utilizan para agrupar
+                        módulos JavaScript en un solo archivo JavaScript que se puede ejecutar en el navegador.
+                        Ejemplos de paquetes de módulos modernos son: webpack, rollup, fusebox, parcel, etc.
+                        </p>
+                        <ul><strong>Se requiere el agrupador de módulos porque:</strong>
+                            <li>El navegador no es compatible con el sistema de módulos, aunque esto no es del todo cierto hoy en día.</li>
+                            <li>Le ayuda a administrar la relación de dependencia de su código, cargará módulos en orden de dependencia para usted.</li>
+                            <li>Le ayuda a cargar sus activos en orden de dependencia, activo de imagen, activo CSS, etc.</li>
+                        </ul>
+
+                        <h2 id="resumen">Resumen</h2>
+                        <p>Entonces, un resumen de lo que se debe tener en cuenta es:</p>
+                        <ol>
+                            <li>El paquete de módulos nos ayudó a combinar múltiples módulos JavaScript en 1 archivo JavaScript.</li>
+                            <li>Los diferentes paquetes de paquetes son diferentes, y hemos examinado 2 de los paquetes modernos, webpack y rollup</li>
+                            <li>La "forma de paquete web":  utiliza el mapa del módulo, usa la función para envolver cada módulo, tiene un código de tiempo de ejecución que pega el módulo juntos.</li>
+                            <li>La "forma acumulada": paquete más plano y más pequeño, no usa la función para envolver el módulo, el orden importa, requiere una clasificación basada en la dependencia, la dependencia circular puede no funcionar.</li>
+                        </ol>
+
+                        <h2 id="referencias">Enlaces Externos</h2>
+                        <ul>
+                            <li><a href="https://webpack.js.org/">Webpack</a></li>
+                            <li><a href="http://rollupjs.org/guide/en/">Rollup</a></li>
+                        </ul>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+    </main>
+
+  <!--Pie Pagina-->
+  <footer>
+
+    <!--Menus navegacion pie pagina-->
+    <div class="col1">
+      <p>© 2020 Jose Luis Gualpa Umaquiza. Trabajo realizado para la asignatura HTML y CSS. Segundo semestre del
+        Master 2020</p>
+      </div>
+    <nav class="col2">
+      <ul>
+        <li class="sin_borde"><a href=""><img src="img/facebook.ico" alt="" /></a></li>
+        <li class="sin_borde"><a href=""><img src="img/twitter.ico" alt="" /></a></li>
+        <li class="sin_borde"><a href=""><img src="img/social_youtube.ico" alt="" /></a></li>
+      </ul>
+    </nav>
+    <div class="col3">
+      <p>Textos elaborados a partir de la información consultada en <a
+          href="https://dev.to/tanhauhau/what-is-module-bundler-and-how-does-it-work-3gp2"><cite>https://dev.to/tanhauhau/what-is-module-bundler-and-how-does-it-work-3gp2</cite></a>
+      </p>
+    </div>
+
+    <!--Link para ir al inicio del contenido de la pagina-->
+    <div class="inicio">
+      <a href="blunder.html#inicio_contenido"><img src="img/up.ico" alt="Inicio Contenido" /></a>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>  
