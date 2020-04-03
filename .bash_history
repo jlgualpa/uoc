@@ -128,3 +128,31 @@ git status
 git add .
 git status
 git push
+git remote add origin https://github.com/jlgualpa/uoc
+git status
+git add .
+git status
+git push
+ping www.google.com
+clear
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+git push
+git remote add origin https://github.com/jlgualpa/uoc
+git push --set-upstream origin master
+git push
+git status
+git push
+git remote add origin https://github.com/jlgualpa/uoc
+git push --set-upstream origin master
+git push origin master
+git config --global user.name "jlgualpa"
+git config --global user.email jgualpa@uoc.edu
+git remote add origin https://github.com/jlgualpa/pec1
+git push origin master
+ls
+ls -a
+ls -l
+npm run dev
+ls
+ls -l
