@@ -68,3 +68,63 @@ vi index.js
 npm run dev
 explorer.exe
 explorer.exe .
+ls
+vi .browserslistrc
+sudo npm install --save-dev
+ls
+vi .postcssrc
+vi index.html 
+vi style.css
+
+vi index.html 
+vi style.css
+npm run build
+npm run dev
+vi style.css
+npm install --save-dev
+npm install --save-dev autoprefixer 
+sudo npm install --save-dev autoprefixer 
+npm run build
+npm run dev
+pwd
+git init
+git add .
+git commit -m "first commit"
+ls
+git config --global user.name "jlgualpa"
+git config --global user.email "jgualpa@uoc.edu"
+
+git status
+git remote add origin https://github.com/jlgualpa/uoc
+pwd
+git remote -v
+git push origin maste
+git add .gitconfig
+git status
+git push origin master
+ls
+vi index.html 
+git commit -m "second commit"
+git status
+git add .viminfo
+git add index.html
+git status
+git push origin master
+git remote add origin https://github.com/jlgualpa/uoc
+git remote -v
+git push origin master
+ls
+vi index.html 
+git status
+git add .
+status
+git status
+git commit -m "segundo commit"
+git push
+git push --set-upstream origin master
+ls
+git commit -m "Web Enciclopedia"
+git status
+git add .
+git status
+git push
