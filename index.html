@@ -7,6 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Enciclopedia Desarrollo Front-End</title>
   <link rel="stylesheet" href="./css/estilos.css" />
+  <script> 
+    function alerta() {
+    alert('Página en Construcción...!');
+    }
+  </script>
 </head>
 
 <body>
@@ -73,9 +78,9 @@
       </div>
     <nav class="col2">
       <ul>
-        <li class="sin_borde"><a href=""><img src="./img/facebook.ico" alt="" /></a></li>
-        <li class="sin_borde"><a href=""><img src="./img/twitter.ico" alt="" /></a></li>
-        <li class="sin_borde"><a href=""><img src="./img/social_youtube.ico" alt="" /></a></li>
+        <li class="sin_borde"><img src="./img/facebook.ico" onclick="alerta();" alt="" /></li>
+        <li class="sin_borde"><img src="./img/twitter.ico" onclick="alerta();"alt="" /></li>
+        <li class="sin_borde"><img src="./img/social_youtube.ico" onclick="alerta();" alt="" /></li>
       </ul>
     </nav>
     <div class="col3">
@@ -86,7 +91,7 @@
 
     <!--Link para ir al inicio del contenido de la pagina-->
     <div class="inicio">
-      <a href="index.html#inicio_contenido"><img src="./img/up.ico" alt="Inicio Contenido" /></a>
+      <a href="index.html#inicio_contenido"><img src="./img/up.ico" alt="Inicio Contenido" title="Ir Inicio Contenido" /></a>
     </div>
 
   </footer>
