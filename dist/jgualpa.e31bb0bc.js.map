@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":["alerta","alert"],"mappings":"AAAA,SAASA,MAAT,GAAkB;AACdC,EAAAA,KAAK,CAAC,4BAAD,CAAL;AACH","file":"jgualpa.e31bb0bc.js","sourceRoot":"..","sourcesContent":["function alerta() {\r\n    alert('Página en Construcción...!');\r\n}"]}
