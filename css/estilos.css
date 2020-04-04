@@ -117,10 +117,6 @@ footer p {
   margin: 0px;
 }
 
-footer li img{
-  cursor: pointer;
-}
-
 /*Estilo para el link que nos llevara al contenido de inicio en cada pagina*/
 
 .inicio {
