@@ -7,6 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Module Bundlers</title>
     <link rel="stylesheet" href="./css/estilos.css" />
+    <script> 
+      function abrirNuevoTabWebpack() {
+        var win = window.open('https://webpack.js.org/', '_blank');
+        win.focus();
+      }
+      function abrirNuevoTabRollup() {
+        var win = window.open('http://rollupjs.org/guide/en/', '_blank');
+        win.focus();
+      }
+    </script>
 </head>
 
 <body>
@@ -79,8 +89,8 @@
 
                         <h2 id="referencias">Enlaces Externos</h2>
                         <ul>
-                            <li><a href="https://webpack.js.org/">Webpack</a></li>
-                            <li><a href="http://rollupjs.org/guide/en/">Rollup</a></li>
+                            <li>Webpack....<button onclick="abrirNuevoTabWebpack();" style="cursor: pointer;">Leer Más</button></li><br>
+                            <li>Rollup.....<button onclick="abrirNuevoTabRollup();" style="cursor: pointer;">Leer Más</button></li>
                         </ul>
 
                     </div>
