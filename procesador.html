@@ -7,21 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Module Bundlers</title>
     <link rel="stylesheet" href="./css/estilos.css" />
-    <script language="javascript" type="text/javascript"></script>
-    <script> 
-      function abrirNuevoTabSass() {
-        var win = window.open('https://sass-lang.com/', '_blank');
-        win.focus();
-      }
-      function abrirNuevoTabLess() {
-        var win = window.open('http://lesscss.org/', '_blank');
-        win.focus();
-      }
-      function abrirNuevoTabStylus() {
-        var win = window.open('https://stylus-lang.com/', '_blank');
-        win.focus();
-      }
-    </script>
+    <script type="text/javascript" src="./index.js"></script>
 </head>
 
 <body>
@@ -85,9 +71,9 @@
                         <h2 id="tipos">Tipos Preprocesadores </h2>
                         <p>Entre los más usados hoy en día tenemos: </p>
                         <ol>
-                            <li>Sass   (Enlace Externo)  <input type="submit" value="IR" onclick="abrirNuevoTabSass();" style="cursor: pointer;"></li>
-                            <li>Less   (Enlace Externo)  <input type="submit" value="IR" onclick="abrirNuevoTabLess();" style="cursor: pointer;"></li>
-                            <li>Stylus (Enlace Externo)  <input type="submit" value="IR" onclick="abrirNuevoTabStylus();" style="cursor: pointer;"></li>
+                            <li>Sass   (Enlace Externo)  <span id="boton_w" style="cursor: pointer; color:darkred;">IR</span></li>
+                            <li>Less   (Enlace Externo)  <span id="boton_l" style="cursor: pointer; color:darkred;">IR</span></li>
+                            <li>Stylus (Enlace Externo)  <span id="boton_t" style="cursor: pointer; color:darkred;">IR</span></li>
                         </ol>
 
                     </div>
