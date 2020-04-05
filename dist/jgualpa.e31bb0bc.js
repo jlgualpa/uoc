@@ -118,19 +118,43 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-function abrirNuevoTabWebpack() {
-  var win = window.open('https://webpack.js.org/', '_blank');
-  win.focus();
+var indice = 0;
+palabras = new Array();
+palabras = ["1.- SASS", "2.- LESS", "3.- STYLUS"];
+indice = Math.random() * palabras.length;
+indice = Math.floor(indice);
+
+function rotar() {
+  if (indice == palabras.length) {
+    indice = 0;
+  }
+
+  document.getElementById("rotando").innerHTML = palabras[indice];
+  indice++;
+  setTimeout("rotar();", 3000);
 }
 
-function abrirNuevoTabRollup() {
-  var win = window.open('http://rollupjs.org/guide/en/', '_blank');
-  win.focus();
+function irPaginaWebpack() {
+  var pregunta = confirm("Desea ir al enlace externo?");
+
+  if (pregunta) {
+    var win = window.open('https://webpack.js.org/', '_blank');
+    win.focus();
+  }
+}
+
+function irPaginaRollup() {
+  var pregunta = confirm("Desea ir al enlace externo?");
+
+  if (pregunta) {
+    var win = window.open('http://rollupjs.org/guide/en/', '_blank');
+    win.focus();
+  }
 }
 
 window.onload = function () {
-  document.getElementById("boton_w").onclick = abrirNuevoTabWebpack;
-  document.getElementById("boton_r").onclick = abrirNuevoTabRollup;
+  document.getElementById("boton_w").onclick = irPaginaWebpack;
+  document.getElementById("boton_r").onclick = irPaginaRollup;
 };
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -160,7 +184,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58124" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52251" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

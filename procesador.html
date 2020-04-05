@@ -7,10 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Module Bundlers</title>
     <link rel="stylesheet" href="./css/estilos.css" />
-    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript">
+      var indice = 0;
+      palabras = new Array();
+      palabras= ["1.- SASS","2.- LESS","3.- STYLUS"];
+      indice = Math.random()*(palabras.length);
+      indice = Math.floor(indice);
+      function rotar() {
+          if (indice == palabras.length) {indice = 0;}
+              document.getElementById("rotando").innerHTML = palabras[indice];
+              indice++;
+              setTimeout("rotar();",3000);
+      }
+    </script>
 </head>
 
 <body>
+  
   <!--Cabecera-->
   <header>
     <div class="contenido">
@@ -41,7 +54,7 @@
             <div class="container_pobreza">
 
                 <div class="impares">
-                    <img src="./img/procesadores-detalle.jpg" class="box" alt="">
+                    <img id="img1" src="./img/procesadores-detalle.jpg" class="box" alt="">
 
                     <!--Menú interior contenido  -->
                     <ul>
@@ -71,12 +84,10 @@
 
                         <h2 id="tipos">Tipos Preprocesadores </h2>
                         <p>Entre los más usados hoy en día tenemos: </p>
-                        <ol>
-                            <li>Sass</li>
-                            <li>Less</li>
-                            <li>Stylus</li>
-                        </ol>
-
+                        <ul>
+                          <li><span id="rotando" style="color:red; font-weight: bolder; background:yellow"></span></li>
+                          <script type="text/javascript">rotar();</script>
+                        </ul>
                     </div>
 
                 </aside>
