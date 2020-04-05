@@ -118,11 +118,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-function abrirNuevoTabSass() {
-  var win = window.open('https://sass-lang.com/', '_blank');
-  win.focus();
-}
-
 function abrirNuevoTabLess() {
   var win = window.open('http://lesscss.org/', '_blank');
   win.focus();
@@ -143,12 +138,14 @@ function abrirNuevoTabRollup() {
   win.focus();
 }
 
+function abrirNuevoTabSas() {
+  var win = window.open('https://sass-lang.com/', '_blank');
+  win.focus();
+}
+
 window.onload = function () {
   document.getElementById("boton_w").onclick = abrirNuevoTabWebpack;
   document.getElementById("boton_r").onclick = abrirNuevoTabRollup;
-  document.getElementById("boton_s").onclick = abrirNuevoTabSass;
-  document.getElementById("boton_l").onclick = abrirNuevoTabLess;
-  document.getElementById("boton_t").onclick = abrirNuevoTabStylus;
 };
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
