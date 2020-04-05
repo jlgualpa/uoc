@@ -118,16 +118,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-function abrirNuevoTabLess() {
-  var win = window.open('http://lesscss.org/', '_blank');
-  win.focus();
-}
-
-function abrirNuevoTabStylus() {
-  var win = window.open('https://stylus-lang.com/', '_blank');
-  win.focus();
-}
-
 function abrirNuevoTabWebpack() {
   var win = window.open('https://webpack.js.org/', '_blank');
   win.focus();
@@ -135,11 +125,6 @@ function abrirNuevoTabWebpack() {
 
 function abrirNuevoTabRollup() {
   var win = window.open('http://rollupjs.org/guide/en/', '_blank');
-  win.focus();
-}
-
-function abrirNuevoTabSas() {
-  var win = window.open('https://sass-lang.com/', '_blank');
   win.focus();
 }
 
