@@ -1,7 +1,5 @@
 /*ESTILOS GENERALES*/
-
 /*Declaracion de colores genrales para el sitio web*/
-
 :root {
   --principal: #306291;
   --fondo-oscuro: rgba(69, 141, 209, 0.5);
@@ -28,7 +26,6 @@ a:hover {
 }
 
 /*Estilos comunes entre todas las paginas*/
-
 body, ul {
   margin: 0;
   padding: 0;
@@ -47,7 +44,6 @@ body, ul {
 }
 
 /*Estilo para dar un tamaño al ancho del contenido*/
-
 .contenido {
   width: 100%;
   max-width: 1024px;
@@ -56,7 +52,6 @@ body, ul {
 }
 
 /*Estilo para listas que se presentaran como menus*/
-
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +88,6 @@ div div ul li {
 }
 
 /*ESTILOS PARA SECCION HEADER*/
-
 /*Definimos el color de la cabecera de todas las paginas*/
 
 header {
@@ -104,7 +98,6 @@ header {
 }
 
 /*ESTILOS PARA SECCION FOOTER*/
-
 /*Definimos el color del pied e pagina de todas las paginas*/
 
 footer {
@@ -127,7 +120,6 @@ footer p {
 }
 
 /*Estilos para ubicar el contenido de cada bloque en el pie de pagina*/
-
 .col1 {
   float: left;
 }
@@ -141,7 +133,6 @@ footer p {
 }
 
 /*ESTILOS PARA SECCION MAIN*/
-
 /*Estilo para evitar que los contenidos principales topen los bordes de las paginas*/
 
 main {
@@ -149,9 +140,7 @@ main {
 }
 
 /*ESTILOS ESPECIFICOS PARA LA PAGINA INDEX*/
-
 /*Estilo para el contenido multimedia*/
-
 figure {
   margin: 0;
   padding-bottom: 50px;
@@ -162,8 +151,7 @@ iframe {
   height: 400px;
 }
 
-/*Estilo para organizar el contenido (imagenes 17 objetivos para transformar el mundo) */
-
+/*Estilo para organizar el contenido*/
 section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -184,9 +172,7 @@ section article img {
 }
 
 /*ESTILOS ESPECIFICOS PARA LA PAGINA CATEGORIAS*/
-
 /*Estilo para organizar el contenido (imagenes y articulos)*/
-
 .container {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -214,10 +200,8 @@ div img {
   margin: 0 auto;
 }
 
-/*ESTILOS ESPECIFICOS PARA LA PAGINA FIN POBREZA*/
-
+/*ESTILOS ESPECIFICOS PARA LA PAGINA BLUNDER Y PROCESADORES*/
 /*Estilo para organizar el contenido (menu interior y articulos con sus respectivos items )*/
-
 .container_articulo {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -236,9 +220,7 @@ ol {
 }
 
 /*ESTILOS ESPECIFICOS PARA LA PAGINA  CONTACTO*/
-
 /*Estilos para el formulario y sus respectivos componentes*/
-
 form {
   max-width: 70%;
   margin: 0 auto;
@@ -302,10 +284,8 @@ input[type="submit"] {
   max-width: 200px;
 }
 
-/*ESTILOS QUE PERMITEN DEFINIR SI EL DISPOSITIVO EN EL QUE S EPRESENTA EL SITIO WEB ES UN MOBILE O UN ORDENADOR*/
-
+/*ESTILOS QUE PERMITEN DEFINIR SI EL DISPOSITIVO EN EL QUE SE PRESENTA EL SITIO WEB ES UN MOBILE O UN ORDENADOR*/
 /*Si es un dispositivo Mobile*/
-
 @media screen and (max-width: 425px) {
   iframe {
     height: 200px;
@@ -359,7 +339,6 @@ input[type="submit"] {
 }
 
 /*Si es un Desktop*/
-
 @media screen and (min-width: 426px) {
   header li {
     width: 120px;
