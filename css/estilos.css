@@ -218,7 +218,7 @@ div img {
 
 /*Estilo para organizar el contenido (menu interior y articulos con sus respectivos items )*/
 
-.container_pobreza {
+.container_articulo {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 20px;
