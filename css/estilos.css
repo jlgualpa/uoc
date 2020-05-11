@@ -8,12 +8,230 @@
   --contraste: #d9645d;
 }
 
-.fondo_claro {
-  background-color: var(--fondo-claro);
+/*Efectos-Movimientos Banner Navegacion Header*/
+.boton:hover {
+    animation: scale 1s;
+    transition: background-color 0.5s ease-out;
+    background-color: var(--fondo-oscuro);
+    border: 1px solid var(--contraste);
+    color: var(--contraste);
+    cursor:pointer;
+  }
+
+.boton {
+    transition: background-color 0.5s ease-out;
+    background-color: var(--fondo-claro);
+    border: 1px solid var(--fondo-oscuro);
 }
 
-.contraste {
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.logo {
+  animation: rise 10s ease-in-out 2s infinite Alternate both;
+  text-align: center;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateX(50px);
+  }
+   
+  100% {
+    transform: translateX(-50px);
+  }
+}
+
+.menu {
+  animation: menuIn 1.5s both 1s;
+  margin: 0px;
+}
+
+.titulo{
+  color: #306291;
+  font-family: lato;
+  text-transform: uppercase;
+}
+
+@keyframes menuIn{
+  0% { 
+    transform: scale(0.1); 
+    opacity: 0;
+  } 
+
+  60% { 
+    transform: scale(1.1); 
+    opacity: 1;
+  } 
+
+  100% { 
+    transform: scale(1); 
+  }
+}
+
+/*Efectos-Movimientos Navegacion Footer*/
+.circle{
+  clip-path: circle(50% at 50% 50%);
+}
+.poligono{
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  background-color: var(--fondo-oscuro);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+/*PAGINA INDEX*/
+.octagono{
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.octagono:hover {
+  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+/*PAGINA CATEGORIAS*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.box_categoria {
+  width: 220px;
+  height: 200px;
+  margin: 2em;
+  float: left;
+}
+
+.box_categoria:hover{
+  transform:scale(1.2);
+  border-radius:50%;
+  box-shadow: 0px 0px 2px 3px var(--contraste);
+  padding: 0;
+}
+
+.migaspan {
+  animation-duration: 3s;
+  animation-name: ingresar;
+}
+
+@keyframes ingresar {
+  from {
+    margin-left: -50%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+/*PAGINA BLUNDER Y PROCESADORES*/
+.icono_g {
+  animation: giro 2s ease-in-out 2s infinite Alternate both;
+  text-align: center;
+}
+
+.icono_a {
+  animation: abajo 2s ease-in-out 2s infinite Alternate both;
+  text-align: center;
+}
+
+@keyframes giro {
+  to {  transform: rotateY(180deg); } 
+}
+
+@keyframes abajo {
+  0% {  transform: translateY(0%); } 
+  100% { transform: translateY(70%); }
+}
+
+.centrado {
+  text-align: center;
+}
+
+.container_articulo {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 20px;
+  margin-top: 2em;
+  text-align: justify;
+}
+
+.list {
+  display: list-item;
+  padding: 10px;
+  color: var(--principal);
+}
+
+.list:hover{
+  cursor: pointer;
   color: var(--contraste);
+  font-weight: bolder;
+}
+/*Bordes Enlaces Submenu*/
+.border {
+outline: 4px yellow;
+box-shadow: 0 0 0 4px rgb(61, 228, 125);
+animation: 5s animateBorder ease infinite;
+margin: 1em;
+}
+
+@keyframes animateBorder {
+  to {
+    outline-color: 4px rgb(61, 228, 125);
+    box-shadow: 0 0 0 4px yellow;
+  }
+}
+
+/*Slide Imagenes*/
+.slider {
+	width: 50%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ol {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: cambio 10s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.slider img {
+	width: 100%;
+}
+
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+/*ESTILOS GENERALES*/
+h1{
+  text-align: center;
 }
 
 a {
@@ -25,28 +243,18 @@ a:hover {
   color: var(--contraste);
 }
 
-/*Estilos comunes entre todas las paginas*/
 body, ul {
   margin: 0;
   padding: 0;
 }
 
-.centrado {
-  text-align: center;
-}
-
-.left {
-  text-align: left;
-}
-
 .sin_borde {
   border: none;
+  width: auto;
 }
 
-/*Estilo para dar un tamaño al ancho del contenido*/
 .contenido {
-  width: 100%;
-  max-width: 1024px;
+  max-width: 70%;
   margin: 0 auto;
   text-align: center;
 }
@@ -60,16 +268,16 @@ ul {
 }
 
 ul li {
-  width: 150px;
-  border: 1px solid var(--fondo-oscuro);
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
   text-align: center;
   list-style: none;
   font-weight: bolder;
+  width: 120px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
+/*Estilo para listas que se presentaran como menus migas de pan*/
 main ul {
   display: block;
 }
@@ -82,148 +290,58 @@ main ul li {
   margin: 0;
 }
 
-div div ul li {
-  display: list-item;
-  padding: 10px;
-}
 
-/*ESTILOS PARA SECCION HEADER*/
-/*Definimos el color de la cabecera de todas las paginas*/
-
+/*ESTILOS HEADER*/
 header {
-  background-color: var(--fondo-claro);
   border-bottom: 2px solid var(--fondo-oscuro);
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
-/*ESTILOS PARA SECCION FOOTER*/
-/*Definimos el color del pied e pagina de todas las paginas*/
-
+/*ESTILOS FOOTER*/
 footer {
-  background-color: var(--fondo-claro);
   border-top: 2px solid var(--fondo-oscuro);
   padding: 1em;
-}
-
-footer p {
-  margin: 0px;
-}
-
-/*Estilo para el link que nos llevara al contenido de inicio en cada pagina*/
-
-.inicio {
-  position: fixed;
-  bottom: 2em;
-  right: 2em;
-  background-color: var(--fondo-claro);
 }
 
 /*Estilos para ubicar el contenido de cada bloque en el pie de pagina*/
 .col1 {
   float: left;
+  margin-left: 50px;
 }
 
 .col2 {
   float: right;
+  margin-right: 50px;
 }
 
-.col3 {
-  clear: both;
-}
-
-/*ESTILOS PARA SECCION MAIN*/
-/*Estilo para evitar que los contenidos principales topen los bordes de las paginas*/
-
+/*ESTILOS MAIN*/
 main {
-  padding: 1em;
-}
-
-/*ESTILOS ESPECIFICOS PARA LA PAGINA INDEX*/
-/*Estilo para el contenido multimedia*/
-figure {
-  margin: 0;
-  padding-bottom: 50px;
-}
-
-iframe {
-  width: 60%;
-  height: 400px;
-}
-
-/*Estilo para organizar el contenido*/
-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 50px;
-  grid-auto-rows: minmax(100px, auto);
-  padding-bottom: 1em;
-}
-
-article {
-  max-width: 100%;
-  width: 250px;
-  height: 250px;
+  max-width: 80%;
   margin: 0 auto;
 }
 
-section article img {
-  max-width: 100%;
+/*ESTILOS CONTACTO*/
+.destello{
+  color:var(--principal);
+  animation:luces .75s ease-out infinite;
+  text-shadow:0px 0px 5px var(--texto-claro), 0px 0px 7px var(--contraste);
 }
 
-/*ESTILOS ESPECIFICOS PARA LA PAGINA CATEGORIAS*/
-/*Estilo para organizar el contenido (imagenes y articulos)*/
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-gap: 20px;
+@keyframes luces{
+  from{
+      text-shadow:
+      0px 0px 10px rgb(61, 228, 125),
+      0px 0px 25px rgb(61, 228, 125),
+      0px 0px 50px rgb(61, 228, 125);
+    }
 }
 
-.impares {
-  grid-column: 1;
-  text-align: left;
-}
 
-.pares {
-  grid-column: 2;
-  text-align: left;
-}
-
-.box {
-  width: 220px;
-  height: 200px;
-  padding: 1em;
-}
-
-div img {
-  display: block;
-  margin: 0 auto;
-}
-
-/*ESTILOS ESPECIFICOS PARA LA PAGINA BLUNDER Y PROCESADORES*/
-/*Estilo para organizar el contenido (menu interior y articulos con sus respectivos items )*/
-.container_articulo {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-gap: 20px;
-}
-
-aside div ul li {
-  text-align: left;
-  padding: 0;
-  list-style: disc;
-  font-weight: normal;
-}
-
-ol {
-  padding: 0;
-}
-
-/*ESTILOS ESPECIFICOS PARA LA PAGINA  CONTACTO*/
-/*Estilos para el formulario y sus respectivos componentes*/
 form {
-  max-width: 70%;
+  max-width: 60%;
   margin: 0 auto;
+  text-align: center;
 }
 
 legend {
@@ -232,20 +350,11 @@ legend {
   color: var(--principal);
 }
 
-form small {
-  color: var(--texto-claro);
-  display: block;
-  text-align: left;
-  padding-bottom: 10px;
-  font-style: oblique;
-}
-
 fieldset {
   border: none;
   border-radius: 10px;
   background-color: var(--fondo-claro);
   text-align: left;
-  margin-bottom: 30px;
 }
 
 fieldset div {
@@ -258,95 +367,66 @@ label {
   width: 35%;
 }
 
-input:not([type="checkbox"]), textarea {
+input , textarea {
   border: 1px solid var(--fondo-oscuro);
   padding: 8px;
   width: 60%;
   margin: 5px;
   border-radius: 5px;
 }
-textarea {
-  width: 100%;
-}
-
-input:focus, input:hover, select:focus, select:hover, textarea:focus, textarea:hover {
-  border: 1px solid var(--contraste);
-}
 
 input[type="submit"] {
-  border-color: var(--contraste);
-  background-color: var(--contraste);
-  color: #fff;
-  text-transform: uppercase;
   font-size: 1.33em;
   border-radius: 10px;
-  margin-top: 30px;
-  max-width: 200px;
+  margin: 30px;
+  max-width: 150px;
 }
 
-/*ESTILOS QUE PERMITEN DEFINIR SI EL DISPOSITIVO EN EL QUE SE PRESENTA EL SITIO WEB ES UN MOBILE O UN ORDENADOR*/
-/*Si es un dispositivo Mobile*/
+input[type="submit"]:hover{
+  background-color:var(--contraste) ;
+  cursor: pointer;
+}
+
+/*ESTILOS ESECIFICOS SI EL DISPOSITIVO EN EL QUE SE PRESENTA EL SITIO WEB ES UN MOBILE*/
+
 @media screen and (max-width: 425px) {
-  iframe {
-    height: 200px;
+  .container_articulo {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+
   footer ul {
     margin: 0px 40px;
   }
+
+  .col1 {
+    margin: 0;
+  }
+  .col2 {
+    margin: 0;
+  }
+
   header ul {
-    margin: 0px 40px;
+    margin: 40px;
   }
-  .col3 {
-    text-align: center;
+
+  header li {
+    width: 150px;
   }
-  .container {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .container_pobreza {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-  .impares {
-    grid-column: 1;
-    text-align: left;
-  }
-  .medio {
-    grid-column: 1;
-    text-align: left;
-  }
-  .pares {
-    grid-column: 1;
-    text-align: left;
-  }
-  aside h2 {
-    text-align: center;
-  }
-  h1 {
-    text-align: center;
-  }
+
   form {
     max-width: 100%;
   }
   fieldset div {
     display: block;
   }
-  input:not([type="checkbox"]), select, textarea {
+  input, select, textarea {
     width: 90%;
   }
-}
 
-/*Si es un Desktop*/
-@media screen and (min-width: 426px) {
-  header li {
-    width: 120px;
+  @keyframes abajo {
+    0% {  transform: translateY(-15%); } 
+    100% { transform: translateY(15%); }
   }
-  footer .col1 ul {
-    justify-content: left;
-  }
-  .sin_borde {
-    width: auto;
-  }
+
 }

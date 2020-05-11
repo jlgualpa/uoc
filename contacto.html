@@ -5,41 +5,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Enciclopedia Contacto</title>
+    <title>Enciclopedia-Contactos</title>
     <link href="/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
+
   <!--Cabecera-->
-  <header>
+  <header id="inicio_contenido">
     <div class="contenido">
       <!--Menu navegacion principal-->
-      <nav>
+      <nav class="menu">
         <ul>
-          <li class="sin_borde"><img src="./img/enciclopedia.png" alt="" /></li>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="categorias.html">Categorias</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li class="sin_borde">
+            <img class="logo" src="./img/enciclopedia.png" alt=""/><br>
+            <span class="titulo">Pec II - Enciclopedia </span>
+          </li>
+          <a href="index.html"><li class="boton">Inicio</li></a>
+          <a href="./categorias.html"><li class="boton">Categorias</li></a>
+          <a href="contacto.html"><li class="boton">Contacto</li></a>
         </ul>
       </nav>
     </div>
   </header>
-    <!--Contenido Principal-->
-    <main id="inicio_contenido">
+
+  <!--Contenido Principal-->
+  <main>
       <span class="col2"><i class="fas fa-user" title="Enlace en Construcción">&nbsp;Iniciar Sesión</i></span>
-        <div class="contenido">
+      <div>
             <!--Menú de migas de pan -->
-            <ul class="left">
+            <ul class="migaspan" >
                 <li><a href="./index.html">Inicio</a></li>
                 <li>/ Contacto</li>
             </ul>
             <!--Formulario Comentarios  -->
-            <h1>Comentario o Sugerencia</h1>           
+            <h1 class="destello">SUGERENCIAS</h1>           
             <form action="#" method="GET">
                 <fieldset>
                     <legend>Datos de contacto</legend>
-                    <small>Todos los campos son obligatorios</small>
                     <div>
                         <label for="mail">Dirección de correo electrónico *</label>
                         <input type="email" name="mail" id="mail" placeholder="Correo Electrónico" required="">
@@ -56,41 +61,35 @@
                         <label for="telefono">Teléfono *</label>
                         <input type="text" name="telefono" id="telefono" placeholder="" required="">
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Comentario/Sugerencia</legend>
                     <div>
-                        <textarea name="propuesta" id="propuesta" placeholder="" required="" rows="10"></textarea>
-                    </div>
+                      <label for="propuesta">Sugerencia *</label>
+                      <textarea name="propuesta" id="propuesta" placeholder="" required="" rows="10"></textarea>
+                  </div>
                 </fieldset>
-                <input type="submit" value="enviar">
+                <input type="submit" value="Enviar">
             </form>
-        </div>
+      </div>
     </main>
 
-    <!--Pie Pagina-->
+  <!--Pie Pagina-->
   <footer>
     <!--Menus navegacion pie pagina-->
     <div class="col1">
-      <p>© 2020 Jose Luis Gualpa Umaquiza. Trabajo realizado para la asignatura HTML y CSS. Segundo semestre del
-        Master 2020</p>
-      </div>
-    <nav class="col2">
-      <ul>
-        <li class="sin_borde"><i class="fab fa-facebook" title="Enlace en Construcción" ></i></li>
-        <li class="sin_borde"><i class="fab fa-twitter" title="Enlace en Construcción"></i></li>
-        <li class="sin_borde"><i class="fas fa-video" title="Enlace en Construcción"></i></li>
-      </ul>
-    </nav>
-    <div class="col3">
-      <p>Textos elaborados a partir de la información consultada en <a
-          href="https://es.wikipedia.org/wiki/Desarrollo_web_Front-end"><cite>https://es.wikipedia.org/wiki/Desarrollo_web_Front-end</cite></a>
+      <p>© 2020 Jose Luis Gualpa Umaquiza. PEC II - HTML y CSS.</p>
+      <p>Textos elaborados a partir de la información consultada en: 
+        <a href="https://es.wikipedia.org/wiki/Desarrollo_web_Front-end"><cite>https://es.wikipedia.org/wiki</cite></a>
       </p>
     </div>
-
+    <nav class="col2">
+      <ul>
+        <li class="sin_borde"><img class="circle" src="./img/faceB.png" alt="" title="Enlace en Construcción"/></li>
+        <li class="sin_borde"><img class="circle" src="./img/youT.png" alt="" title="Enlace en Construcción"/></li>
+        <li class="sin_borde"><img class="circle" src="./img/tweeT.png" alt="" title="Enlace en Construcción"/></li>
+      </ul>
+    </nav>
     <!--Link para ir al inicio del contenido de la pagina-->
-    <div class="inicio">
-      <a href="contacto.html#inicio_contenido"><i class="fas fa-angle-double-up" title="Ir Inicio Contenido"></i></a>
+    <div class="poligono">
+      <a href="contacto.html#inicio_contenido"><img src="./img/up.ico" alt="" title="Ir Inicio Contenido"/></a>
     </div>
   </footer>
 

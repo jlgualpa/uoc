@@ -5,95 +5,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Categorias Desarrollo Front-End</title>
+    <title>Enciclopedia-Categorias</title>
     <link href="/node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
+
   <!--Cabecera-->
-  <header>
+  <header id="inicio_contenido">
     <div class="contenido">
       <!--Menu navegacion principal-->
-      <nav>
+      <nav class="menu">
         <ul>
-          <li class="sin_borde"><img src="./img/enciclopedia.png" alt="" /></li>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="./categorias.html">Categorias</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
+          <li class="sin_borde">
+            <img class="logo" src="./img/enciclopedia.png" alt=""/><br>
+            <span class="titulo">Pec II - Enciclopedia </span>
+          </li>
+          <a href="index.html"><li class="boton">Inicio</li></a>
+          <a href="./categorias.html"><li class="boton">Categorias</li></a>
+          <a href="contacto.html"><li class="boton">Contacto</li></a>
         </ul>
       </nav>
     </div>
   </header>
 
-    <!--Contenido Principal-->
-    <main id="inicio_contenido">
+  <!--Contenido Principal-->
+  <main>
       <span class="col2"><i class="fas fa-user" title="Enlace en Construcción">&nbsp;Iniciar Sesión</i></span>
-        <div class="contenido">
-            <!--Menú de migas de pan -->
-            <ul class="left">
-                <li><a href="./index.html">Inicio</a></li>
-                <li>/ Categorias</li>
-            </ul>
-            <!-- Bloque Categorias, imagenes y articulos -->
-            <h1>Herramientas HTML y CSS</h1>         
-            <div class="container">
-                <div class="impares">
-                    <img src="./img/blunder.jpg" class="box" alt="">
-                </div>
-                <aside class="pares">
-                    <h2>1. Module Bundlers</h2>
-                    <p>Los paquetes de módulos son herramientas que los desarrolladores frontales utilizan para agrupar módulos
-                    JavaScript en un solo archivo JavaScript que se puede ejecutar en el navegador....</p>
-                    <p><a href="blunder.html">+ Module Bundlers</a></p>
-                </aside>
-                <div class="impares">
-                    <img src="./img/procesadores.jpg" class="box" alt="">
-                </div>
-                <aside class="pares">
-                    <h2>2. Preprocesadores</h2>
-                    <p>Los archivos CSS o Cascading Stylesheets que tenemos en nuestros proyectos web nos ayudan a crear sitios web
-                         atractivos para nuestros clientes, pero por lo general un archivo CSS contiene muchas líneas de código, 
-                         lo que demanda una inversión significativa de nuestro tiempo. Esto sumado a algunas limitaciones de CSS
-                         puede generar un trabajo menos productivo.…</p>
-                    <p><a href="procesador.html">+ sobre Preprocesadores</a></p>
-                </aside>
-                <div class="impares">
-                    <img src="./img/lenguages.jpg" class="box" alt="">
-                </div>
-                <aside class="pares">
-                    <h2>3. Lenguages</h2>
-                    <p>HTML, CSS y JavaScript son los lenguajes principales del Frontend, de los que se desprenden una cantidad de frameworks 
-                    y librerías que expanden sus capacidades para crear cualquier tipo de interfaces de usuarios. React, Redux, Angular, Bootstrap,
-                    Foundation, LESS, Sass, Stylus y PostCSS son algunos de ellos.</p>
-                </aside>
-            </div>
+        <!--Menú de migas de pan -->
+        <ul class="migaspan">
+            <li><a href="./index.html">Inicio</a></li>
+            <li>/ Categorias</li>
+        </ul>
+        <!-- Contenido Bloque Categorias -->
+        <div class="container">
+          <h1>Herramientas HTML y CSS</h1>         
+          <div>
+              <a href="blunder.html"><img class="box_categoria box_giro" src="./img/categoria_blunder.jpg"  alt=""></a>
+              <h2>WebpackBundlers</h2>
+              <p>Los paquetes de módulos son herramientas que los desarrolladores frontales utilizan para agrupar módulos
+                JavaScript en un solo archivo JavaScript que se puede ejecutar en el navegador....</p>
+              <p>En esencia, webpack es un paquete de módulos estáticos para aplicaciones JavaScript modernas. 
+                Cuando webpack procesa su aplicación, internamente crea un gráfico de dependencia que asigna cada módulo que su proyecto necesita y genera uno o más paquetes .</p>
+              <p><a href="blunder.html"> Leer más ...</a></p>
+          </div>
+          <div>
+              <a href="procesador.html"><img class="box_categoria" src="./img/categoria_preprocesador.jpg"  alt=""></a>
+              <h2>Preprocesadores</h2>
+              <p>Los archivos CSS o Cascading Stylesheets que tenemos en nuestros proyectos web nos ayudan a crear sitios web
+                atractivos para nuestros clientes, pero por lo general un archivo CSS contiene muchas líneas de código, 
+                lo que demanda una inversión significativa de nuestro tiempo. Esto sumado a algunas limitaciones de CSS
+                puede generar un trabajo menos productivo.…</p>
+              <p><a href="procesador.html"> Leer más ...</a></p>
+          </div>
         </div>
-    </main>
+  </main>
 
   <!--Pie Pagina-->
   <footer>
     <!--Menus navegacion pie pagina-->
     <div class="col1">
-      <p>© 2020 Jose Luis Gualpa Umaquiza. Trabajo realizado para la asignatura HTML y CSS. Segundo semestre del
-        Master 2020</p>
-      </div>
-    <nav class="col2">
-      <ul>
-        <li class="sin_borde"><i class="fab fa-facebook" title="Enlace en Construcción" ></i></li>
-        <li class="sin_borde"><i class="fab fa-twitter" title="Enlace en Construcción"></i></li>
-        <li class="sin_borde"><i class="fas fa-video" title="Enlace en Construcción"></i></li>
-      </ul>
-    </nav>
-    <div class="col3">
-      <p>Textos elaborados a partir de la información consultada en <br>
-        <a href="https://dev.to/tanhauhau/what-is-module-bundler-and-how-does-it-work-3gp2"><cite>https://dev.to/tanhauhau/what-is-module-bundler-and-how-does-it-work-3gp2 </cite></a>,
-        <a href="https://devcode.la/blog/preprocesador-de-css/"><cite>https://devcode.la/blog/preprocesador-de-css/</cite></a>
+      <p>© 2020 Jose Luis Gualpa Umaquiza. PEC II - HTML y CSS.</p>
+      <p>Textos elaborados a partir de la información consultada en:
+        <a href="https://devcode.la/blog/preprocesador-de-css/"><cite>https://devcode.la/blog/preprocesador</cite></a>
       </p>
     </div>
+    <nav class="col2">
+      <ul>
+        <li class="sin_borde"><img class="circle" src="./img/faceB.png" alt="" title="Enlace en Construcción"/></li>
+        <li class="sin_borde"><img class="circle" src="./img/youT.png" alt="" title="Enlace en Construcción"/></li>
+        <li class="sin_borde"><img class="circle" src="./img/tweeT.png" alt="" title="Enlace en Construcción"/></li>
+      </ul>
+    </nav>
     <!--Link para ir al inicio del contenido de la pagina-->
-    <div class="inicio">
-      <a href="categorias.html#inicio_contenido"><i class="fas fa-angle-double-up" title="Ir Inicio Contenido"></i></a>
+    <div class="poligono">
+      <a href="categorias.html#inicio_contenido"><img src="./img/up.ico" alt="" title="Ir Inicio Contenido"/></a>
     </div>
   </footer>
 
