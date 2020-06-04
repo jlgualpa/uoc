@@ -1,20 +1,13 @@
-/*ESTILOS GENERALES*/
-/*Declaracion de colores generales para el sitio web*/
 :root {
   --principal: #306291;
   --fondo-oscuro: rgba(69, 141, 209, 0.5);
   --fondo-claro: rgba(69, 141, 209, 0.2);
   --contraste: #d9645d;
 }
-
-/*SECCION HEADER*/
 header {
   border-bottom: 2px solid var(--principal);
   background-image: linear-gradient( white,var(--fondo-oscuro));
 }
-
-/*Efectos-Movimientos Banner Navegacion Header*/
-/*Animacion Botones*/
 .boton:hover {
     animation: scale 1s;
     transition: background-color 0.5s ease-out;
@@ -23,41 +16,32 @@ header {
     color: var(--contraste);
     cursor:pointer;
   }
-
 .boton {
     transition: background-color 0.5s ease-out;
     background-color: var(--fondo-claro);
     border: 1px solid var(--principal);
 }
-
 @keyframes scale {
   0% { transform: scale(1);} 
   100% { transform: scale(1.1);}
 }
-
-/*Animacion logo*/
 .logo {
   animation: rise 10s ease-in-out 2s infinite Alternate both;
   text-align: center;
 }
-
 @keyframes rise {
   0% { transform: translateX(50px);}  
   100% { transform: translateX(-50px);}
 }
-
-/*Animacion Menu*/
 .menu {
   animation: menuIn 1.5s both 1s;
   margin: 0px;
 }
-
 .titulo{
   color: var(--contraste);
   font-family: lato;
   text-transform: uppercase;
 }
-
 @keyframes menuIn{
   0% { 
     transform: scale(0.1); 
@@ -71,19 +55,13 @@ header {
     transform: scale(1); 
   }
 }
-
-/*SECCION FOOTER*/
 footer {
   border-top: 2px solid var(--principal);
   padding: 0 2em 0 2em;
 }
-
-/*Efecto recorte Redes Sociales*/
 .circle{
   clip-path: circle(50% at 50% 50%);
 }
-
-/*Efecto fondo link Inicio Contenido*/
 .poligono{
   position: fixed;
   bottom: 1em;
@@ -91,31 +69,22 @@ footer {
   background-color: var(--fondo-oscuro);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
-
-/*Estilos para ubicar el contenido del footer*/
 .col1 {
   float: left;
 }
 .col2 {
   float: right;
 }
-
-/*SECCION MAIN*/
 main {
   max-width: 80%;
   margin: 1em auto;
 }
-
-/*PAGINA INDEX*/
-/*Efecto cambio forma Imagen Principal*/
 .octagono{
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 .octagono:hover {
   clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 }
-
-/*Efecto caja y borde seccion Login*/
 .bordesvg {
   text-align: center;
   width: 200px;
@@ -125,19 +94,16 @@ main {
   border: solid 1px var(--contraste);
 
 }
-
 .bordesvg:hover {
   background-image: linear-gradient( white,var(--contraste));
   border: solid 1px rgb(61, 228, 125);
   cursor: pointer;
 }
-
 svg {
   position: absolute;
   top: 0;
   left: 0;
 }
-
 svg line {
   stroke-width: 5px;
   stroke: var(--principal);
@@ -146,119 +112,92 @@ svg line {
   -webkit-transition: all .6s;
   transition: transform .6s;
 }
-
 .bordesvg:hover svg line.top {
 -webkit-transform: translateX(-400px);
 transform: translateX(-400px);
 }
-
 .bordesvg:hover svg line.bottom {
 -webkit-transform: translateX(400px);
 transform: translateX(400px);
 }
-
 .bordesvg:hover svg line.left {
 -webkit-transform: translateY(400px);
 transform: translateY(400px);
 }
-
 .bordesvg:hover svg line.right {
 -webkit-transform: translateY(-400px);
 transform: translateY(-400px);
 }
-
-/*PAGINA CATEGORIAS*/
 .container {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-
-/*Efecto Imagenes secudarias borde circular*/
 .box_categoria {
   width: 220px;
   height: 200px;
   margin: 2em;
   float: left;
 }
-
 .box_categoria:hover{
   transform:scale(1.2);
   border-radius:50%;
   box-shadow: 0px 0px 2px 3px var(--contraste);
   padding: 0;
 }
-
-/*Efecto entrada menu Migas de Pan*/
 .migaspan {
   animation-duration: 3s;
   animation-name: ingresar;
 }
-
 @keyframes ingresar {
   from { margin-left: -50%; }
   to { margin-left: 0%; }
 }
-
-/*PAGINA DETALLE CATEGORIAS BLUNDER Y PROCESADORES*/
-/*Efecto movimientos y giros imagenes*/
 .icono_g {
   animation: giro 2s ease-in-out 2s infinite Alternate both;
   text-align: center;
 }
-
 .icono_a {
   animation: abajo 2s ease-in-out 2s infinite Alternate both;
   text-align: center;
 }
-
 @keyframes giro {
   to {  transform: rotateY(180deg); } 
 }
-
 @keyframes abajo {
   0% {  transform: translateY(0%); } 
   100% { transform: translateY(70%); }
 }
-
-/*Bordes Enlaces Submenu*/
 .border {
   outline: 4px yellow;
   box-shadow: 0 0 0 4px rgb(61, 228, 125);
   animation: 5s animateBorder ease infinite;
   margin: 1em;
   }
-  
-  @keyframes animateBorder {
+@keyframes animateBorder {
     to {
       outline-color: 4px rgb(61, 228, 125);
       box-shadow: 0 0 0 4px yellow;
     }
   }
-
-/*Efecto Slide para presentar imagenes secundarias*/
 .slider {
 	width: 50%;
 	margin: auto;
 	overflow: hidden;
 }
-
 .slider ol {
 	display: flex;
 	padding: 0;
 	width: 400%;
 	animation: cambio 10s infinite alternate linear;
 }
-
 .slider li {
 	width: 100%;
   list-style: none;
   text-align: center;
 }
-
 .slider img {
 	width: 100%;
 }
-
 @keyframes cambio {
 	0% {margin-left: 0;}
 	20% {margin-left: 0;}
@@ -269,12 +208,9 @@ transform: translateY(-400px);
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
-
-/*Estilos distribucion contenido*/
 .centrado {
   text-align: center;
 }
-
 .container_articulo {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -282,27 +218,21 @@ transform: translateY(-400px);
   margin-top: 2em;
   text-align: justify;
 }
-
 .list {
   display: list-item;
   padding: 10px;
   color: var(--principal);
 }
-
 .list:hover{
   cursor: pointer;
   color: var(--contraste);
   font-weight: bolder;
 }
-
-/*PAGINA CONTACTO*/
-/*Efecto destellos del titulo*/
 .destello{
   color:var(--principal);
   animation:luces .75s ease-out infinite;
   text-shadow:0px 0px 5px var(--texto-claro), 0px 0px 7px var(--contraste);
 }
-
 @keyframes luces{
   from{
       text-shadow:
@@ -311,43 +241,33 @@ transform: translateY(-400px);
       0px 0px 50px rgb(61, 228, 125);
     }
 }
-
-/*ESTILOS GENERALES*/
 h1{  text-align: center;}
-
 a {
   text-decoration: none;
   color: var(--principal);
 }
-
 a:hover {
   color: var(--contraste);
 }
-
 body, ul {
   margin: 0;
   padding: 0;
 }
-
 .sin_borde {
   border: none;
   width: auto;
 }
-
 .contenido {
   max-width: 70%;
   margin: 0 auto;
   text-align: center;
 }
-
-/*Estilo para listas que se presentaran como menus*/
 ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
-
 ul li {
   text-align: center;
   list-style: none;
@@ -357,12 +277,9 @@ ul li {
   margin: 10px;
   padding: 10px;
 }
-
-/*Estilo para listas que se presentaran como menus migas de pan*/
 main ul {
   display: block;
 }
-
 main ul li {
   border: none;
   display: inline-block;
@@ -370,36 +287,30 @@ main ul li {
   padding: 0;
   margin: 0;
 }
-
 form {
   max-width: 60%;
   margin: 0 auto;
   text-align: center;
 }
-
 legend {
   font-weight: bolder;
   font-size: 1.333em;
   color: var(--principal);
 }
-
 fieldset {
   border: none;
   border-radius: 10px;
   background-color: var(--fondo-claro);
   text-align: left;
 }
-
 fieldset div {
   display: flex;
   margin: 10px;
   text-align: left;
 }
-
 label {
   width: 35%;
 }
-
 input , textarea {
   border: 1px solid var(--fondo-oscuro);
   padding: 8px;
@@ -407,54 +318,41 @@ input , textarea {
   margin: 5px;
   border-radius: 5px;
 }
-
 input[type="submit"] {
   font-size: 1.33em;
   border-radius: 10px;
   margin: 30px;
   max-width: 150px;
 }
-
 input[type="submit"]:hover{
   background-color:var(--contraste) ;
   cursor: pointer;
 }
-
-/*ESTILOS ESPECIFICOS SI EL DISPOSITIVO EN EL QUE SE PRESENTA EL SITIO WEB ES UN MOBILE*/
-
 @media screen and (max-width: 425px) {
   .container_articulo {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-
   footer ul {
     margin: 0px 100px;
   }
-
   .sin_borde {
     width: 100%;
   }
-
- form {
+  form {
     max-width: 100%;
   }
-
   fieldset div {
     display: block;
   }
-
   input, select, textarea {
     width: 90%;
   }
-
-  @keyframes abajo {
+@keyframes abajo {
     0% {  transform: translateY(-15%); } 
     100% { transform: translateY(15%); }
   }
-  
   .slider {
     width: 100%;
   }
-
 }
